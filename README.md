@@ -11,19 +11,21 @@ Flask
 SpaCy
 Pandas
 Transformers (from Hugging Face)
+
 You can install the required packages using the following command:
 
-bash
-Copy code
+bash:
+
 pip install flask spacy pandas transformers
 Additionally, download the SpaCy model using:
 
-bash
-Copy code
+bash:
+
 python -m spacy download en_core_web_sm
 Download the GPT-2 model using the following Python code:
 
-python
+python:
+
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
