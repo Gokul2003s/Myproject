@@ -1,10 +1,11 @@
-
-ChatGPT
 Create a Chatbot Using Python
-Introduction
+
+
+Introduction:
+
 This repository contains Python code for a customer service chatbot implemented using Flask, SpaCy, and the GPT-2 language model. The chatbot is designed to provide high-quality support to users, answering their queries on a website or application.
 
-Dependencies
+Dependencies:
 Ensure you have the following dependencies installed in your Python environment:
 
 Python 3.x
@@ -71,4 +72,5 @@ Users can input their queries through the chat interface. If the query matches a
 Additional Notes
 The chatbot's responses can be further enhanced by integrating advanced models like GPT-3.
 Implement feedback mechanisms to continuously improve response quality.
+
 Note: Ensure that you have the necessary API keys and permissions if you plan to use advanced language models like GPT-3.
