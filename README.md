@@ -49,6 +49,7 @@ model = GPT2LMHeadModel.from_pretrained("gpt2")
 <h2>How to Run:</h2>
 
 <p>Place your dataset file dialogs.txt in the root directory. The dataset should be in tab-separated format with columns "question" and "answer".</p>
+<p>Dataset: <a href="https://www.kaggle.com/datasets/grafstor/simple-dialogs-for-chatbot">https://www.kaggle.com/datasets/grafstor/simple-dialogs-for-chatbot</a></p>
 
 <p>Run the Flask application:</p>
 
@@ -59,6 +60,8 @@ model = GPT2LMHeadModel.from_pretrained("gpt2")
 <h2>Dataset</h2>
 
 <p>The dataset (dialogs.txt) used for this chatbot contains pairs of questions and corresponding answers. It's utilized to train the chatbot and provide predefined responses. Please replace provide_source_link_here with the actual source link of your dataset.</p>
+<p>Dataset: <a href="https://www.kaggle.com/datasets/grafstor/simple-dialogs-for-chatbot">https://www.kaggle.com/datasets/grafstor/simple-dialogs-for-chatbot</a></p>
+
 
 <h2>Usage</h2>
 
