@@ -1,76 +1,71 @@
-Create a Chatbot Using Python
+<h1>Create a Chatbot Using Python</h1>
 
+<h2>Introduction:</h2>
 
-Introduction:
+<p>This repository contains Python code for a customer service chatbot implemented using Flask, SpaCy, and the GPT-2 language model. The chatbot is designed to provide high-quality support to users, answering their queries on a website or application.</p>
 
-This repository contains Python code for a customer service chatbot implemented using Flask, SpaCy, and the GPT-2 language model. The chatbot is designed to provide high-quality support to users, answering their queries on a website or application.
+<h2>Dependencies:</h2>
 
-Dependencies:
-Ensure you have the following dependencies installed in your Python environment:
+<p>Ensure you have the following dependencies installed in your Python environment:</p>
 
-Python 3.x
-Flask
-SpaCy
-Pandas
-Transformers (from Hugging Face)
+<ul>
+  <li>Python 3.x</li>
+  <li>Flask</li>
+  <li>SpaCy</li>
+  <li>Pandas</li>
+  <li>Transformers (from Hugging Face)</li>
+</ul>
 
-You can install the required packages using the following command:
+<p>You can install the required packages using the following command:</p>
 
-bash:
-pip install flask spacy pandas transformers
+<pre><code>bash: pip install flask spacy pandas transformers</code></pre>
 
-Additionally, download the SpaCy model using:
+<p>Additionally, download the SpaCy model using:</p>
 
-bash:
+<pre><code>bash: python -m spacy download en_core_web_sm</code></pre>
 
-python -m spacy download en_core_web_sm
-Download the GPT-2 model using the following Python code:
+<p>Download the GPT-2 model using the following Python code:</p>
 
-python:
-
+<pre><code>python:
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 model = GPT2LMHeadModel.from_pretrained("gpt2")
+</code></pre>
 
-Setting Up the Environment
+<h2>Setting Up the Environment</h2>
 
-1. Create a Virtual Environment:
-It's a good practice to work within a virtual environment to manage project dependencies. To create a virtual environment, run the following commands in your project directory:
+<p>Create a Virtual Environment: It's a good practice to work within a virtual environment to manage project dependencies. To create a virtual environment, run the following commands in your project directory:</p>
 
-bash:
+<pre><code>bash: python3 -m venv venv</code></pre>
 
-python3 -m venv venv
+<p>Activate the Virtual Environment On Windows:</p>
 
-2. Activate the Virtual Environment
-On Windows:
-bash:
+<pre><code>bash: venv\Scripts\activate</code></pre>
 
-venv\Scripts\activate
+<p>On macOS and Linux:</p>
 
-On macOS and Linux:
-bash:
+<pre><code>bash: source venv/bin/activate</code></pre>
 
-source venv/bin/activate
+<h2>How to Run:</h2>
 
+<p>Place your dataset file dialogs.txt in the root directory. The dataset should be in tab-separated format with columns "question" and "answer".</p>
 
-How to Run:
+<p>Run the Flask application:</p>
 
-Place your dataset file dialogs.txt in the root directory. The dataset should be in tab-separated format with columns "question" and "answer".
+<pre><code>bash: python app.py</code></pre>
 
-Run the Flask application:
+<p>Access the chatbot interface in your web browser at <a href="http://localhost:5000">http://localhost:5000</a>.</p>
 
-bash:
-python app.py
-Access the chatbot interface in your web browser at http://localhost:5000.
+<h2>Dataset</h2>
 
-Dataset
-The dataset (dialogs.txt) used for this chatbot contains pairs of questions and corresponding answers. It's utilized to train the chatbot and provide predefined responses. Please replace provide_source_link_here with the actual source link of your dataset.
+<p>The dataset (dialogs.txt) used for this chatbot contains pairs of questions and corresponding answers. It's utilized to train the chatbot and provide predefined responses. Please replace provide_source_link_here with the actual source link of your dataset.</p>
 
-Usage
-Users can input their queries through the chat interface. If the query matches a question in the dataset, the corresponding answer is provided. If there is no match in the dataset, the chatbot uses the GPT-2 model to generate a response.
+<h2>Usage</h2>
 
-Additional Notes
-The chatbot's responses can be further enhanced by integrating advanced models like GPT-3.
-Implement feedback mechanisms to continuously improve response quality.
+<p>Users can input their queries through the chat interface. If the query matches a question in the dataset, the corresponding answer is provided. If there is no match in the dataset, the chatbot uses the GPT-2 model to generate a response.</p>
 
-Note: Ensure that you have the necessary API keys and permissions if you plan to use advanced language models like GPT-3.
+<h2>Additional Notes</h2>
+
+<p>The chatbot's responses can be further enhanced by integrating advanced models like GPT-3. Implement feedback mechanisms to continuously improve response quality.</p>
+
+<p><strong>Note:</strong> Ensure that you have the necessary API keys and permissions if you plan to use advanced language models like GPT-3.</p>
