@@ -104,6 +104,7 @@ model = GPT2LMHeadModel.from_pretrained("gpt2")
     </div>
     </body>
     </html>
+    
 # dataset.html
 <!DOCTYPE html>
 <html lang="en">
@@ -133,9 +134,6 @@ model = GPT2LMHeadModel.from_pretrained("gpt2")
     </table>
 </body>
 </html>
-
-
-
 
 
 # CHATBOT.py
@@ -211,6 +209,8 @@ model = GPT2LMHeadModel.from_pretrained("gpt2")
 
     if __name__ == '__main__':
     app.run(debug=True)
+#Note: outputs and preprocessed dataset are in the phase 4 document 
+
 
 <h2>How to Run:</h2>
 
